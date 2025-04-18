@@ -1,0 +1,236 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Education</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-size: 19px;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+nav img {
+  width: 50px;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  background-color: #FF3C78;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  background-image: linear-gradient(45deg,#16B1CB,#EF5BB3);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  border-top-right-radius: 14px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.para {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.imagediv {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.imagediv img {
+  width: 90%;
+  max-width: 650px;
+  border-radius: 15px;
+}
+
+.ppp {
+  font-size: 26px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.course-card {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.course-card img {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 15px;
+}
+
+.course-card p {
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  margin-top: 10%;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #FF3C78;
+  margin: 0 0px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .content {
+    padding: 0 10px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <img src="dash.jpg" alt="web-logo" />
+      <ul>
+        <li><a href="homenew.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+<a class="btn" href="#" onclick="showAlert(); return false;">Free trial</a>
+    </nav><div class="content">
+  <h1 class="heading">Empowering Minds, Shaping Futures</h1>
+  <p class="para">We provide high-quality, flexible education designed to inspire growth and success. With expert faculty, supportive resources, and modern learning options, we help students achieve their goals and build a brighter future.</p>
+
+  <div class="imagediv">
+    <img src="never.jpg" alt="Intro Image" class="intro">
+    <p class="ppp">Important courses you need to know in BCA</p>
+
+    <div class="course-card">
+      <a href="https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w">
+        <img src="images (4).jpeg" alt="Web Development">
+      </a>
+      <p>Web Designing Course</p>
+    </div>
+
+    <div class="course-card">
+      <a href="https://youtube.com/playlist?list=PLEHGYFbPuuME9Gfl5r5CCWCzJ-pRfFVpL">
+        <img src="images (5).jpeg" alt="Math Course">
+      </a>
+      <p>Mathematical Calculation Course</p>
+    </div>
+
+    <div class="course-card">
+      <a href="https://youtube.com/playlist?list=PL9RcWoqXmzaKWxaNoDhW4O1kA0hK9AYys">
+        <img src="images (6).jpeg" alt="Communication">
+      </a>
+      <p>Communication Skill Course</p>
+    </div>
+
+    <div class="course-card">
+      <a href="https://youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi">
+        <img src="images (7).jpeg" alt="Data Structures">
+      </a>
+      <p>Data Structure using C Tough Course</p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>© 2025 NEW EDUCATION. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+  </div>
+  <script>
+  function showAlert(){
+    alert("All courses are below! Learn any course free of cost");
+    return false;
+  }
+    
+  </script>
+</body>
+</html>
